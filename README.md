@@ -13,6 +13,7 @@
 </p>
 
 ## 📁 Folders/
+- [Codelandia](Codelandia) / My solutions to the challenges proposed by the Codelandia Community, which consist of replicating a design made in Figma into a website using HTML and CSS.
 
 ## 🔗 References
 - [JavaScript Docs : Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
