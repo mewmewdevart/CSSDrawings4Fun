@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+/* MAIN CONTENT OF THE PAGE */
+#page-main {
+    background-color: var(--bgSite);
+    width: 100%;
+    height: 500px;
+}
+
+.container-main {
+    display: flex;
+    justify-content:flex-start;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.container-main .content-main {
+    padding-top: 8%;
+}
+
+.container-main .content-main h1 {
+    color: var( --title);
+    font-size: 36px;
+}
+
+.container-main .content-main p {
+    color: var(--text);
+    font-size: 19px;
+}
+
+.container-main img {
+    width: 500px;
+    height: 359px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: var(--buttonColor);
+    padding: 15px 40px;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MIDDLE CONTENT OF THE PAGE */
+#page-middle {
+    background-color: var(--white300);
+    width: 100%;
+    height: 875px;
+}
+
+.container-middle {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.card-middle {
+    width: 23%;
+    margin-right: 2%;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 25px;
+}
+
+.block {
+    background-color: #6c63ff;
+    width: 100%;
+    height: 200px;
+}
+
+.card-middle h2 {
+    color: var(--title);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.card-middle p {
+    color: var(--text);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+#page-final {
+    background-color: var(--bgSite);
+    width: 100%;
+    height: 500px;
+}
+
+#page-final h1{
+    padding-top: 25px;
+    text-align: center;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
+}
+
+input {
+    width: 470px;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.btn2 {
+    background-color: #6C63FF;
+    color: white;
+}

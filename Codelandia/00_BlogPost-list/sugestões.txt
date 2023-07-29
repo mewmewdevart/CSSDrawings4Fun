@@ -1,0 +1,54 @@
+Como o nome do arquivo já diz, são apenas sugestões :)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1º No pacote ZIP temos um arquivo chamado 'variaveis.css'. Para usar variáveis CSS é simples:
+
+p{
+ color: var(--title);
+}
+
+Dessa forma nossa tag 'p' terá a cor #313131.
+Por que usar variáveis? Se for uma aplicação grande, será chato ficar procurando todos os títulos da página para mudar de cor. 
+Com a variável é só mudar o valor dela e assim será aplicada em toda aplicação!
+
+Qualquer dúvida leia esse post que fiz sobre como declarar variáveis no CSS 
+Post sobre variáveis no CSS => https://www.instagram.com/p/CO6F8r4gXVw/
+
+Caso você não entenda sobre cores, também fiz um post sobre
+Post sobre cores => https://www.instagram.com/p/CMqGBTmj2KW/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2º A estrutura toda do desafio pode ser feita usando Flexbox, assim fica melhor na hora de fazer a responsividade.
+
+Essas propriedades Flexbox já são o suficiente:
+
+#nomeDiv{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+Post sobre justify-content => https://www.instagram.com/p/CMQNUOjA_nM/
+Post sobre align-items => https://www.instagram.com/p/CMVUmSHAWZx/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3º Lembre-se: antes de começar a fazer o estilo da estrutura faça um reset no navegador.
+
+* {
+ box-sizing: boder-box;
+ padding: 0;
+ margin: 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4º Na hora de criar o container do post, deixe o height em auto. Como temos vários tipos de tamanhos na descrição não é bom criar altura fixa em todos.
+Use também width: 100% no mesmo container, assim fica melhor na hora de fazer a responsividade.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+BOA SORTE! 
+By iuricode

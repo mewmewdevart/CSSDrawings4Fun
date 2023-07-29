@@ -1,0 +1,119 @@
+:root {
+    --bgSite: #00AEFF;
+    --bgSite2: #181818;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+}
+
+header {
+    align-items: center;
+    text-align: center ;
+}
+
+.cupom-page {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--bgSite2);
+    color: vaR(--white);
+}
+
+.title-page {
+    font-size: 24px;
+    padding: 15px;
+}
+
+.container-banner {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 35vh; /*valor_em_vh = (valor_em_px / altura_da_tela) * 100  */
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../image/wallpaper.jpeg);
+    filter: brightness(50%);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    width: 637px;
+    height: 76px;
+    position: relative;
+    color: var(--white);
+    margin-top: 100px;
+    margin-left: 100px;
+    z-index: 1;
+}
+
+.banner-content h2{
+    font-size: 42px;
+}
+
+.banner-content p{
+    font-size: 24px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.products-cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.products-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.products-content h3{
+    font-size: 32px;
+}
+
+.products {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--bgCard);
+    width: 30%;
+    height: 30%;
+    margin-right: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    margin-top: 70px;
+    padding: 20px;
+    text-align: center ;
+    background-color: var(--bgSite2);
+    color: vaR(--white);
+}
