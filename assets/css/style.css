@@ -40,11 +40,10 @@ header img{
     align-items: flex-start;
     width: 100%;
     margin: 0 auto;
-    padding: 30px;
 }
 
 #myBtnContainer {
-    margin-top: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
