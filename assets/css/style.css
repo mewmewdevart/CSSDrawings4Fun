@@ -43,11 +43,44 @@ header img{
     padding: 30px;
 }
 
+#myBtnContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #665E66;
+    color: white;
+  }
+
+.filterDiv {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+}
+
 .container-fluid .card {
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 300px; /* Ajuste a altura conforme necessário */
+    height: 300px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px, rgba(149, 117, 222, 0.5) 0px 2px 5px;
@@ -87,6 +120,18 @@ header img{
     background-color: var(--colorPrincipal);
     color: var(--colorGray);
 }
+
+.container-fluid .card .icon-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px 0px 5px 0px;
+    padding: 12px;
+    font-weight: 500;
+    background-color: #DDDAEC;
+    color: #7c7b7d;
+}
+
 
 .container-fluid .card .btn {
     background-color: #FFFFFF;
