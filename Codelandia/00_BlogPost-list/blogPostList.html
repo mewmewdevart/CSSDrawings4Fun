@@ -9,64 +9,80 @@
     <title>00 - Basic blog list</title>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <h1 class="logo">Codelândia</h1>
-            <p class="blog">blog</p>
-        </div>
-        
-        <div class="bar">
-            <i class="fa fa-magnifying-glass"></i> <input type="text" placeholder="Pesquisar no blog">
-        </div>
-    </header>
-
+        <header>
+            <nav>
+                <div class="options-nav">
+                    <h1 class="logo">Codelândia</h1>
+                    <p class="blog">blog</p>
+                </div>
+                <div class="bar-search">
+                    <i class="fa fa-magnifying-glass"></i> <input type="search" placeholder="Pesquisar no blog">
+                </div>
+            </nav>
+        </header>
     <section>
-        <div class="container_fluid">
-            <div class="content">
+        <div class="container-fluid">
+            <div class="container">
                 <div class="header-content">
-                    <p class="date-content">02 de jul, 2022 </p>
-                    <div class="icon-content"><i class="fa-regular fa-heart"></i></div>
+                    <h3>02 de jul, 2021</h3>
+                    <div class="icon-content"><i class="fa-regular fa-heart heart-icon"></i></div>
                 </div>
-                <div class="card-content">
-                    <h2 class="title-content"> Agora é oficial: o Windows 11 está vindo </h2>
-                    <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Lorem ipsum dolor sit.</p>
+                <div class="content">
+                    <h2>Agora é oficial: o Windows 11 está vindo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
                 </div>
             </div>
 
-            <div class="content">
+            <div class="container">
                 <div class="header-content">
-                    <p class="date-content">01 de jul, 2021 </p>
-                    <div class="icon-content"><i class="fa-regular fa-heart"></i></div>
+                    <h3>01 de jul, 2021</h3>
+                    <div class="icon-content"><i class="fa-regular fa-heart heart-icon"></i></div>
                 </div>
-                <div class="card-content">
-                    <h2 class="title-content"> Tim Berners-Lee vai leiloar código-fonte da web </h2>
-                    <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam culpa doloremque dolore corrupti aperiam.</p>
-                </div>
-            </div>
-        
-            <div class="content">
-                <div class="header-content">
-                    <p class="date-content">29 de jun, 2022 </p>
-                    <div class="icon-content"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="card-content">
-                    <h2 class="title-content"> Tem Firefox novo no pedaço e você vai querer migrar </h2>
-                    <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam culpa doloremque dolore corrupti aperiam, nisi hic facilis, neque dolor enim consequuntur sint rerum.</p>
+                <div class="content">
+                    <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
                 </div>
             </div>
 
-            <div class="content">
+            <div class="container">
                 <div class="header-content">
-                    <p class="date-content">02 de jul, 2022 </p>
-                    <div class="icon-content"><i class="fa-regular fa-heart"></i></div>
+                    <h3>29 de jun, 2022</h3>
+                    <div class="icon-content"><i class="fa-regular fa-heart heart-icon"></i></div>
                 </div>
-                <div class="card-content">
-                    <h2 class="title-content"> John McAfee, criador do antivírus McAfee, morre </h2>
-                    <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam culpa doloremque dolore corrupti aperiam, nisi hic facilis, neque dolor enim consequuntur sint rerum necessitatibus tenetur, itaque quos modi esse commodi.</p>
+                <div class="content">
+                    <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="header-content">
+                    <h3>01 de jun, 2021</h3>
+                    <div class="icon-content"><i class="fa-regular fa-heart heart-icon"></i></div>
+                </div>
+                <div class="content">
+                    <h2>John McAfee, criador do antivírus McAfee, morre</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer></footer>
+    <script>
+        // Get all heart icons with the class name 'heart-icon'
+        const heartIcons = document.querySelectorAll(".heart-icon");
+
+        // Loop through each heart icon and add event listeners
+        heartIcons.forEach(heartIcon => {
+            heartIcon.addEventListener("mouseover", () => {
+                heartIcon.classList.remove("fa-regular");
+                heartIcon.classList.add("fas", "heart-icon");
+            });
+
+            heartIcon.addEventListener("mouseout", () => {
+                heartIcon.classList.remove("fas", "heart-icon");
+                heartIcon.classList.add("fa-regular");
+            });
+        });
+      </script>
 </body>
 </html>
