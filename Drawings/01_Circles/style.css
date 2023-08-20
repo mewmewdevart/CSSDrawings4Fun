@@ -1,0 +1,241 @@
+@import url(resetCss.css);
+:root {
+	--softColor-Yellow: #F8EA69;
+	--Color-Yellow: #F8CD54;
+	--softColor-Purple: #BD9CDE;
+	--Color-Purple: #996ACC;
+	--softColor-Pink: #FF89CA;
+	--Color-Pink: #FA4AAD;
+	--softColor-Blue: #83DEFF;
+	--Color-Blue: #0BB8FD;
+	--colorBlack: #423E4F;
+}
+
+section {
+	width: 100%;
+	min-height: 70vh;
+}
+
+.circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	margin: 100px auto;
+	width: 50%;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 35%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* =============== CIRCLE 01: PINK =============== */
+.circle_1 {
+	position: absolute;
+	background-color: var(--softColor-Pink);
+	width: 130px;
+	height: 130px;
+	margin-left: 10px;
+	border-radius: 100%;
+}
+
+.shadow_1 {
+	background-color: var(--Color-Pink);
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+}
+
+.eye_1 {
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 10px;
+	height: 15px;
+	margin: 50px 0 0 20px;
+}
+
+.eye_1:nth-child(2) {
+	background-color: var(--colorBlack);
+	width: 10px;
+	height: 15px;
+	margin: 50px 0 0 100px;
+}
+
+.mouth_1 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--colorBlack);
+	border-radius: 100%;
+	margin: 70px 10px 10px 40px;
+}
+
+/* =============== CIRCLE 02:PURPLE =============== */
+
+.circle_2 {
+	position: absolute;
+	background-color: var(--softColor-Purple);
+	width: 130px;
+	height: 130px;
+	margin-left: 10px;
+	border-radius: 100%;
+}
+
+.shadow_2 {
+	background-color: var(--Color-Purple);
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+}
+
+.iris {
+	margin: 10px auto;
+	width: 10px;
+	height: 10px;
+	background-color: var(--colorBlack);
+	border-radius: 100%;
+}
+
+.eye_2 {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin: 30px 0px 0px 20px;
+	background-color: white;
+}
+
+.eye_2:nth-child(2) {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin: 30px 0px 0px 75px;
+	background-color: white;
+}
+
+.mouth_2 {
+	position: absolute;
+	width: 30px;
+	height: 90px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	transform: translateX(-50%);
+	margin: 60px 0px 0px 65px;
+	background-color: var(--colorBlack);
+}
+
+/* =============== CIRCLE 03:BLUE =============== */
+
+.circle_3 {
+	position: absolute;
+	background-color: var(--softColor-Blue);
+	width: 130px;
+	height: 130px;
+	margin-left: 10px;
+	border-radius: 100%;
+}
+
+.shadow_3 {
+	background-color: var(--Color-Blue);
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+}
+
+.eye_3 {
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 10px;
+	height: 15px;
+	margin: 50px 0 0 40px;
+}
+
+.eye_3:nth-child(2) {
+	background-color: var(--colorBlack);
+	width: 10px;
+	height: 15px;
+	margin: 50px 0 0 80px;
+}
+
+.mouth_3 {
+	width: 20px;
+	height: 10px;
+	transform: rotate(-180deg);
+	margin: 80px 0px 0px 55px;
+	background-color: var(--colorBlack);
+	stroke-width: 5px;
+	stroke: #3A484A;
+}
+
+/* =============== CIRCLE 03:YELLOW =============== */
+
+.circle_4 {
+	position: absolute;
+	background-color: var(--softColor-Yellow);
+	width: 130px;
+	height: 130px;
+	margin-left: 10px;
+	border-radius: 100%;
+}
+
+.shadow_4 {
+	background-color: var(--Color-Yellow);
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+}
+
+.continus-eye {
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 25px;
+	height: 10px;
+	margin: 45px 0 0 33px;
+	border-radius: 10px;
+}
+
+.eye_4 {
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 10px;
+	height: 20px;
+	margin: 50px 0 0 40px;
+	border-radius: 10px;
+}
+
+.eye_4:nth-child(2) {
+	background-color: var(--colorBlack);
+	width: 10px;
+	height: 20px;
+	margin: 50px 0 0 80px;
+	border-radius: 10px;
+}
+
+.mouth_4 {
+	width: 60px;
+	height: 30px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	position: absolute;
+	transform: translateX(-50%);
+	margin: 80px 0px 0px 65px;
+	background-color: var(--colorBlack);
+}
+
+@media (max-width: 900px) {
+	.circle {
+		width: 50%;
+		margin: 20px auto;
+	}
+	.circles {
+		display: block;
+		width: 100%; 
+		margin: 50px auto;
+	}
+}
