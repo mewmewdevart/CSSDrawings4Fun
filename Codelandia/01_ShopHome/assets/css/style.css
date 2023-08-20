@@ -45,7 +45,8 @@ section {
     display: flex;
     align-items: flex-start;
     width: 100%;
-    height: 370px;
+    min-height: 370px;
+    margin-bottom: 5px;
 }
 
 .header-banner {
