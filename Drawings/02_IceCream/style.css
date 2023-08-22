@@ -1,0 +1,123 @@
+@import url(resetCss.css);
+
+:root {
+	--softPurpleColor: #B6A4FF;
+	--hardPurpleColor: #937FE6;
+	--softBlackColor: #3A484A;
+	--softYellowColor: #FADC60;
+	--hardYellowColor: #F2C42C;
+}
+
+.illustration-container {
+	background-color: #fffdb8;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ice-cream-master {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.ice-cream-cone {
+	background: var(--softPurpleColor);
+	position: relative;
+	transform: rotate(45deg);
+	width: 130px;
+	height: 230px;
+	border-radius: 100px 100px 20px 20px;
+	z-index: 2;
+}
+
+.ice-cream-face {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 42px;
+	z-index: 2;
+}
+
+.ice-cream-eye {
+	top: 10px;
+	left: 15px;
+	width: 8px;
+	height: 17px;
+	background-color: var(--softBlackColor);
+	border-radius: 5px;
+}
+
+.ice-cream-eye:nth-child(2) {
+	position: absolute;
+	top: 1px;
+	left: 36px;
+	width: 8px;
+	height: 17px;
+	background-color: var(--softBlackColor);
+	border-radius: 5px;
+}
+
+.ice-cream-mouth {
+	position: absolute;
+	width: 30px;
+	height: 15px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	transform: translateX(-50%);
+	margin: 5px 0px 0px 23px;
+	background-color: var(--softBlackColor);
+}
+
+.ice-shadow {
+	position: absolute;
+	background-color: var(--hardPurpleColor);
+	top: 11px;
+	left: 12px;
+	width: 130px;
+	height: 230px;
+	transform: rotate(45deg);
+	border-radius: 100px 100px 20px 20px;
+}
+
+.ice-cream-details {
+	margin: 50px 25px auto;
+}
+
+.ice-cream-shadow-detail {
+	position: absolute;
+	width: 26px;
+	height: 125px;
+	background-color: var(--hardPurpleColor);
+	border-radius: 100px 100px;
+	z-index: 3;
+}
+
+.ice-cream-shadow-detail:nth-child(2) {
+	position: absolute;
+	width: 26px;
+	height: 125px;
+	margin-left: 50px;
+	background-color: var(--hardPurpleColor);
+	border-radius: 100px 100px;
+	z-index: 3;
+}
+
+.ice-cream-stick {
+	top: 125px;
+	right: 122px;
+	position: absolute;
+	width: 40px;
+	height: 145px;
+	transform: rotate(45deg);
+	background-color: var(--softYellowColor);
+	border-radius: 50px;
+	z-index: 1;
+}
+
+.ice-cream-stick-shadow {
+	width: 40px;
+	height: 90px;
+	background-color: var(--hardYellowColor);
+}
