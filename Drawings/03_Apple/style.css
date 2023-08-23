@@ -1,0 +1,108 @@
+@import url(resetCss.css);
+
+:root {
+    --color-LightRed: #FF7878;
+    --color-Red: #FF4B4B;
+    --color-DarkRed: #EA2B2B;
+    --color-Green: #5ABB1A;
+    --color-Brown: #743D00;
+}
+
+.container {
+    background-color: #d6c2ff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.apple {
+    width: 250px;
+    height: 250px;
+}
+
+.apple-body {
+    background-color: var(--color-Red);
+    width: 125px;
+    height: 160px;
+    left: 7px;
+    transform: rotate(-40deg);
+    border-radius: 90px;
+    z-index: 2;
+    position: relative;
+}
+
+.apple-body::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 160px;
+    background-color: var(--color-Red);
+    border-radius: 90px;
+    top: 43px;
+    left: 50px;
+    transform: rotate(80deg);
+    z-index: 2;
+}
+
+.light {
+    position: absolute;
+    background-color: var(--color-LightRed);
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    z-index: 4;
+}
+
+.shadow {
+    position: relative;
+    background-color: var(--color-DarkRed);
+    margin-top: -85px;
+    margin-left: 150px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    z-index: 5;
+}
+
+.shadow::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-DarkRed);
+    margin-top: 30px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    z-index: 5;
+}
+
+.stick {
+    position: absolute;
+    margin-left: 95px;
+    margin-top: -20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 67px solid var(--color-Brown);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+
+.leaf {
+    position: absolute;
+    margin-top: -70px;
+    left: 50%;
+    width: 40px;
+    height: 80px;
+    transform: rotate(-133deg);
+    flex-shrink: 0;
+    border-radius: 100%;
+    background-color: var(--color-Green);
+    z-index: 6;
+}
