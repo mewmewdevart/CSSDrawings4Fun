@@ -19,8 +19,8 @@ body {
 	display: flex;
     align-items: center;
     justify-content: center;
-	margin-top: 200px;
-	margin-left: -70px;
+	height: 250px;
+	margin: 15% auto;
 }
 
 .head {
