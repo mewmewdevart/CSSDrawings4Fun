@@ -247,5 +247,7 @@ body {
 	.pet {
 		margin-left: -100px;
 	}
-	
+	.ear-left, .ear-right {
+		rotate: 50deg;	
+	}	
 }
