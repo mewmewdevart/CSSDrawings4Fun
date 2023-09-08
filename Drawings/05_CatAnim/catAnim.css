@@ -84,7 +84,7 @@ body {
 	margin-left: 17px;
 }
 
-.ear {
+.ear-left {
 	background-color: var(--darkBlue);
 	position: absolute;
 	width: 50px;
@@ -96,16 +96,16 @@ body {
 	rotate: 50deg;	
 }
 
-.ear::before {
+.ear-right{
 	background-color: var(--darkBlue);
-	content: "";
 	position: absolute;
-	z-index: -7;
 	width: 50px;
 	height: 20px;
 	border-radius: 50px;
-	margin-top: -17px;
-	margin-left: 17px;
+	z-index: -5;
+	margin-top: -10px;
+	margin-left: 75px;
+	rotate: 50deg;	
 }
 
 .detail{
