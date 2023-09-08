@@ -16,11 +16,16 @@ body {
 }
 
 .container {
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-	height: 250px;
-	margin: 15% auto;
+    min-height: 100vh;
+}
+
+.pet {
+	position: relative;
+	width:170px;
+	height: 200px;
 }
 
 .head {
