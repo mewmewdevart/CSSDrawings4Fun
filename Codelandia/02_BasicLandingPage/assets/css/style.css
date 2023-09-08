@@ -137,20 +137,20 @@ section {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	width: 250px;
+	width: 470px;
 }
 
 input {
-	width: 470px;
-	padding: 15px;
+	width: 93%;
+	padding: 15px 0px 15px 10px;
 	border-radius: 4px;
 	margin: 5px;
 }
 
 textarea {
 	border: none;
-	width: 470px;
-	padding: 15px;
+	width: 93%;
+	padding: 15px 0px 15px 10px;
 	border-radius: 4px;
 	margin: 5px;
 }
@@ -173,5 +173,8 @@ textarea {
 	.cards {
 		flex-direction: column;
 		align-items: center;
+	}
+	.btn2 {
+		width: 80%;
 	}
 }
