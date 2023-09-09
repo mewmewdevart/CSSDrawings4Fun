@@ -208,6 +208,9 @@ img {
     margin: 0 auto;
     bottom: 0;
   }
+  nav ul li {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1400px) {
