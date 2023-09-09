@@ -15,6 +15,7 @@
 ## 📁 Folders
 - [Codelandia](Codelandia) / These are my solutions to the challenges proposed by the Codelandia Community. The challenges involve replicating a design created in Figma into a website using HTML and CSS.
 - [Drawings](Drawings) / Artworks created using HTML and CSS.
+- [CSSBattles](CSSBattles) / CSSBattle is an online CSS Code "Golfing" game.
 
 ## 🔗 References
 - [JavaScript Docs: Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
