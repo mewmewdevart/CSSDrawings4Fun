@@ -1,0 +1,211 @@
+@import url(./resetCss.css);
+
+:root {
+	--bgColor: #141845;
+
+	--colorBlack: #0A0001;
+	--colorWhite: #ECF2FF;
+	--colorGray: #CCD0D9;
+
+	--colorBlueSoft: #45C4FF;
+	--colorBlueMedium: #39BFFE;    
+	--colorBlueDark: #24A8FD;
+	--colorBlueDarkDark: #1CA2F8;
+	--Darker: #1A93E0;
+}
+
+body {
+	background-color: var(--bgColor);
+}
+.container {
+	height: 31rem;
+	width: 31rem;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+.planet {
+	background-color: var(--colorBlueMedium);
+	box-shadow: 13px 0 0 0px var(--colorBlueDark);
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.planet:before {
+	content: "";
+	background-color: var(--colorBlueSoft);
+	position: absolute;
+	height: 1.5em;
+	width: 1.5em;
+	top: 6em;
+	left: 3em;
+	border-radius: 50%;
+	box-shadow: 
+	1.8em 5.2em 0 0.6em var(--Darker),
+	-1.2em 3.1em 0 0.3em var(--Darker),
+	4.8em -2.9em 0 1em var(--colorBlueDark),
+	9em 2em 0 0.6em var(--colorBlueDarkDark),
+	-1.9em -2em 0 0.1em var(--colorBlueDark),
+}
+
+.planet:after {
+	content: "";
+	background-color: var(--colorBlueSoft);
+	position: absolute;
+	height: 1.5em;
+	width: 1.5em;
+	top: 6em;
+	left: 3em;
+	border-radius: 50%;
+	box-shadow: 
+	2em 5em 0 0.6em var(--colorBlueDark),
+	-1em 3em 0 0.3em var(--colorBlueDark),
+	5em -3em 0 1em var(--colorBlueSoft),
+	9em 3em 0 0.6em var(--colorBlueSoft),
+	-2em -2em 0 0.1em var(--colorBlueDarkDark),
+	8.9em -1em 0 0.1em var(--colorBlueDark);
+}
+
+.eyes {
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	left: 4.5em;
+	top: 6em;
+}
+
+.eyes:before {
+	content: "";
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	left: 4.5em;
+	top: 0em;
+}
+
+.mouth {
+	position: absolute;
+	background-color: var(--colorBlack);
+	width: 35px;
+	height: 25px;
+	border-radius: 5px 5px 50% 50%;
+	left: 6.5em;
+	top: 8em;
+}
+
+.blushing {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--colorBlueDark);
+	left: 4em;
+	top: 8em;
+}
+
+.blushing:before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--colorBlueDark);
+	left: 6.5em;
+}
+
+.moon {
+	position: relative;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background-color: var(--colorWhite);
+	box-shadow: 6px 2px 0 0px var(--colorGray);
+	bottom: -20em;
+	left: 4em;
+	animation: spin 3s infinite;
+	z-index: 1;
+}
+
+.moon::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background-color: transparent; 
+	box-shadow: 0 0 20px 0px var(--colorWhite);
+	z-index: -1;
+}
+
+.moon .face .eyes {
+	background-color: var(--colorBlack);
+	position: absolute;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	left: 1em;
+	top: 2em;
+}
+
+.moon .face .eyes:before {
+	content: "";
+	background-color: var(--colorBlack);
+	position: absolute;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	left: 2em;
+}
+.moon .face .mouth {
+	position: absolute;
+	width: 6px;
+	height: 2px;
+	border: 3px solid var(--colorBlack);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top: 0;
+	left: 2em;
+	top: 3em;
+}
+
+.star-blue {
+	position: absolute;
+	z-index: 2;
+	top: 16rem;
+	left: 25rem;
+}
+
+.star-white {
+	position: absolute;
+	z-index: 2;
+	top: 7rem;
+	left: 8rem;
+}
+
+@keyframes spin {
+	49%{
+		z-index: 1;
+	}
+	50%{
+		bottom: -9.3em;
+		left: 24em;
+		z-index: -1;
+	}
+	100%{
+		z-index: -1;
+	}
+} 
