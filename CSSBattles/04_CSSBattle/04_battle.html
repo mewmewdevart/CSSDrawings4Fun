@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #FEFAE3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .bege {
+            width: 160px;
+            height: 40px;
+            margin-top: -160px;
+            margin-left: -40px;
+            background: #D4A469;
+        }
+        .bege::before {
+            content: "";
+             position: absolute;
+            width: 160px;
+            height: 40px;
+            margin-top: 160px;
+            margin-left: 40px;
+            background: #D4A469;
+        }
+        .brown {
+            position: absolute;
+            width: 40px;
+            height: 160px;
+            margin-top: -40px;
+            margin-left: 160px;
+            background: #B17036;
+        }
+        .brown::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 160px;
+            margin-top: 40px;
+            margin-left: -160px;
+            background: #B17036;
+        }
+        </style>
+    <title>03_SET09</title>
+</head>
+<body>
+    <div class="bege"></div>
+    <div class="brown"></div>
+</body>
+</html>
