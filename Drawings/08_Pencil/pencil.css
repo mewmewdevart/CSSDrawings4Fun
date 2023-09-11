@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh; 
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draw {
+  height: 200px;
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 67.5px;
+  border: 2px solid black;
+  background-color: #ecdcc4;
+}
+
+.pencil {
+  height: 160px; 
+  width: 80px;
+  border: 1.5px solid #0d2436;
+  position: relative;
+  left: 40px;
+  border-left: none;
+  border-radius: 0 80px 80px 0;
+  transform-origin: 0 50%;
+  animation: draw 8s infinite linear;
+}
+
+@keyframes draw {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pencil:before {
+  content: "";
+  position: absolute;
+  height: 121px;
+  width: 35px;
+  left: -17.5px; 
+  top: -2.5px;
+  background: linear-gradient(
+    #ed3569 60%,
+    #d2dfe8 60%
+  ) no-repeat,
+  linear-gradient(
+    to right,
+    #f26c37 33.33%,
+    #eb852c 32.33%,
+    #eb852c 66.66%,
+    #f19f22 66.66%
+  );
+  background-size: 100% 20%, 100% 30%;
+  background-position: 0 0, 0 50%; 
+  border-radius: 5px 5px 0 0;
+}
+
+.pencil:after {
+  content: "";
+  position: absolute;
+  height: 43.5px;
+  width: 35px; 
+  left: -17.5px;
+  bottom: -1.5px;
+  background: linear-gradient(
+    #f4c09b 70%,
+    #0d2436 70%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    50% 100%
+  );
+}
