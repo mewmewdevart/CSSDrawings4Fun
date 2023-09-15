@@ -83,10 +83,12 @@ nav ul li:last-child {
   text-transform: uppercase;
   color: var(--white-20);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .container-content .btns button:hover {
   background-color: #53259d;
+  cursor: pointer;
 }
 
 .container-content .btns button:last-child {
