@@ -13,15 +13,17 @@
 </p>
 
 ## 📁 Folders
-- [Codelandia](Codelandia) / These are my solutions to the challenges proposed by the Codelandia Community. The challenges involve replicating a design created in Figma into a website using HTML and CSS.
+- [AbstractCSS](AbstractCSS) / Some abstract drawings created for CSS Challenges, such as CSSBattle and others.
 - [Drawings](Drawings) / Artworks created using HTML and CSS.
-- [CSSBattles](CSSBattles) / CSSBattle is an online CSS Code "Golfing" game.
+- [JSProjects](JSProjects) / Small applications developed with JavaScript.
+- [WebPages](WebPages) / These are my solutions to the challenges proposed by the Web Community (Codelandia, Devchallenges, Figma Community etc).
 
 ## 🔗 References
 - [JavaScript Docs: Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Codelandia Challenges](https://discord.com/invite/QevDJqCzaY)
 - [CollectUI Challenges](https://collectui.com/)
 - [Flaticon](https://www.flaticon.com/br/)
+- [CSSBattle](https://cssbattle.dev/)
 
 ## 📜 License
 This project is licensed under the terms of [LICENSE](LICENSE). Please follow the link for more information.<br>
