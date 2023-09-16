@@ -16,12 +16,22 @@
 	<section>
 		<div id="myBtnContainer">
 			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-			<button class="btn" onclick="filterSelection('webPages')"> WebPages </button>
-			<button class="btn" onclick="filterSelection('draws')"> Draws </button>
 			<button class="btn" onclick="filterSelection('abstractCSS')"> Abstract </button>
+			<button class="btn" onclick="filterSelection('draws')"> Draws </button>
+			<button class="btn" onclick="filterSelection('jsProjects')"> JS Projects </button>
+			<button class="btn" onclick="filterSelection('webPages')"> WebPages </button>
 		</div>
 
 		<div class="container-fluid">
+			<div class="card filterDiv  jsProjects">
+				<div class="icon-number">01</div>
+				<img src="./JSProjects/01_ageCalculator/cardYear.png" alt="the age calculator">
+				<h2>Age Calculator</h2>
+				<p>Small JS application to calculate age, month and days</p>
+				<a class="btn" role="button" href="./JSProjects/01_ageCalculator/ageCalculator.html" target="_blank">Show me!</a>
+				<div class="icon-badge">JavaScript</div>
+			</div>
+
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">06</div>
 				<img src="./AbstractCSS/06_CSSBattle/art.png" alt="the gradient block">

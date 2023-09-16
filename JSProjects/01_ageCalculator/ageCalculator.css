@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--colorPrimary: #3E54A3;
+	--colorSoft: #3d87c3;
+	--colorSecondary: #FFFFFF;
+
+	--bgColor: #F0F0F0;
+}
+
+body {
+	background-color: var(--bgColor);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+	background-color: var(--colorSecondary);
+	border-radius: 50px 0px 50px 10px;
+	border: solid 2px var(--bgColor);
+	width: 400px;
+	height: 480px;
+	margin: 5% auto;
+}
+
+#badge {
+	width: 50px;
+	border-radius: 5px 0px 5px 0px;
+	padding: 10px 10px;
+	top: 85px;
+	background-color: #26A6FE;
+	border: none;
+	cursor: pointer;
+}
+
+#badge:hover {
+	width: 50px;
+	border-radius: 5px 0px 5px 0px;
+	padding: 10px 10px;
+	top: 85px;
+	background-color: #2980bb;
+	border: none;
+	cursor: pointer;
+}
+
+header {
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+header img {
+	width: 64px;
+	height: 64px;
+}
+
+form {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 30px;
+}
+
+input {
+	width: 80px;
+	padding: 5px;
+	border: 1px solid var(--bgColor);
+	border-radius: 5px;
+}
+
+#month::placeholder, #year::placeholder, #day::placeholder {
+	color: #000000;
+	font-weight: bold;
+}
+
+label {
+	color:gray;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+hr {
+	margin: 10px 0px;
+	border: 1px solid rgb(248, 248, 248);
+}
+
+.action-button {
+	background-color: #60B7FF;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 60px;
+
+	margin-left: -100px;
+}
+
+.action-button:hover {
+	background-color: var(--colorPrimary);
+	cursor: pointer;
+}
+
+.result {
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.result p {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.result span {
+	color: var(--colorSoft);
+}
+
+
