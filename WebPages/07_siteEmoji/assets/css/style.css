@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('resetCss.css');
+
+:root {
+  --brandColor: #6610F2;
+  --dark-10: #131318;
+  --white-20: #FFFFFF;
+  --support-05: #E0E0E0;
+  --support-04: #F03D3D;
+  --support-03: #FFCE52;
+  --support-02: #0BB07B;
+  --support-01: #2962FF;
+  --fontStandard: 'Inter', sans-serif;
+}
+
+* {
+  font-family: var(--fontStandard);
+}
+
+nav {
+  display: flex;
+  width: 70%;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav ul li {
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 10px;
+  font-weight: 500;
+  align-items: center;
+  gap: 12px;
+  border-radius: 100px;
+  border: 2px solid #EAEAEA;
+}
+
+nav ul li:last-child {
+  display: inline-flex;
+  padding: 15px 48px;
+  gap: 12px;
+}
+
+.container-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container-content .container {
+  margin-top: 100px;
+}
+
+.container-content p, .container-content h2 {
+  text-align: center;
+  font-family: var(--fontStandard);
+}
+
+.container-content h2 {
+  color: #2F2F2F;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.container-content .btns {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.container-content .btns button {
+  display: inline-flex;
+  border: none;
+  padding: 15px 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--brandColor);
+  text-transform: uppercase;
+  color: var(--white-20);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-content .btns button:hover {
+  background-color: #53259d;
+  cursor: pointer;
+}
+
+.container-content .btns button:last-child {
+  display: inline-flex;
+  border: none;
+  padding: 15px 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--white-20);
+  text-transform: uppercase;
+  color: var(--dark-10);
+  font-weight: bold;
+  border: 2px solid #EAEAEA;
+}
+
+.container-content .btns button:last-child:hover {
+  background-color: #b1b1b1;
+}
+
+.container-bottom {
+  background-color: #F2F2F2;
+  width: 70%;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.container-bottom .container {
+  margin: 100px 40px 0 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  background-color: #F2F2F2;
+}
+
+.container-bottom h3, .container-bottom p {
+  color: var(--dark-10);
+  font-family: var(--fontStandard);
+}
+
+.container-bottom h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container-bottom p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.line {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 4px;
+  height: 18px;
+  background-color: var(--brandColor);
+}
+
+img {
+  position: absolute;
+}
+
+.meme-boy {
+  margin-left: 800px;
+}
+
+.meme-boy2 {
+  margin-top: -70px;
+}
+
+.meme-girl {
+  margin-top: 150px;
+}
+
+.meme-girl2 {
+  margin-top: 190px;
+  margin-left: 800px;
+}
+
+@media screen and (max-width: 1300px) {
+  img {
+    display: none;
+  }
+
+  .container-content h2 {
+    color: var(--dark-10);
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .container-content .btns {
+    margin-top: 40px;
+    display: block;
+  }
+
+  .container-content .btns button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container-bottom .container {
+    margin: 20px 20px 0 20px;
+    padding-top: 20px;
+    display: block;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .container-bottom {
+    background-color: #F2F2F2;
+    width: 90%;
+    margin: 0 auto;
+    bottom: 0;
+  }
+  nav ul li {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .meme-boy {
+    margin-left: 1100px;
+  }
+
+  .meme-boy2 {
+    margin-top: -70px;
+    margin-left: 120px;
+  }
+
+  .meme-girl {
+    margin-top: 150px;
+    margin-left: 80px;
+  }
+
+  .meme-girl2 {
+    margin-top: 190px;
+    margin-left: 1000px;
+  }
+}

@@ -1,0 +1,154 @@
+@import url(resetCss.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Variáveis */
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+section .loginPage {
+    background-color: var(--white);
+}
+
+section {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+.bannerCard {
+    background-color: var(--white300);
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    /* border-right: 1px solid black; */
+}
+
+.bannerCard img {
+    padding-top: 125px;
+    width: 400px;
+    height: 330px;
+}
+
+.loginForm {
+    /* background-color: var(--white300); */
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    height: 100vh;
+    right: 0;
+}
+
+.loginForm form {
+    font-size: 16px;
+    display: block;
+    padding-top: 125px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    right: 0;
+}
+
+.loginForm form h2{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.loginForm form p {
+    margin-bottom: 5px;
+}
+
+
+.loginForm form input {
+    width: 340px;
+    height: 45px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.container-options {
+    width: 359px;
+    display: inline-block;
+    padding-top: 10px; 
+}
+
+.container-options a{
+    color: var(--blue);
+}
+
+.check-form {
+    padding-top: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px !important;
+    height: 16px !important;
+    border: 2px solid var(--blue);
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50px !important;
+    margin-right: 10px;
+    float: left;
+}
+
+.check-form:checked {
+    background-color: var(--blue);
+}
+
+.forget-word {
+    display: block;
+    float: right;
+}
+
+
+.loginForm form .btn{
+    width: 359px;
+    height: 45px;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.loginForm form .btn-container {
+    width: 359px;
+    height: 40px;
+    display: inline-block;
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.loginForm form .btn-container img{
+    display: inline-block;
+  }
+
+.loginForm form .btn-container p{
+    display: inline-block;
+}
+
+.login-fot {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login-fot a {
+    color: var(--blue);
+}
+
