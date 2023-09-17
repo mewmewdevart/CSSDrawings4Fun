@@ -1,0 +1,230 @@
+:root {
+	--corPrincipalBico: #FFCF01;
+	--corSecundariaBico: #FFA300;
+	--corTerciariaBico: #D86802;
+
+	--corGalho: #E18541;
+
+	--corPlumaPrimaria: #FFFFFF;
+	--corPlumaSecundaria: #D5E0E4;
+	--corPlumaTerciaria: #364542;
+
+	--corIrisPrimaria: #459DE5;
+	--corRaboPrimaria: #459DE5; 
+	--corRaboSecundaria: #2C73CB;
+}
+
+body {
+	background-color: #faf0b7;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	z-index: -99;
+}
+.tucano {
+	position: absolute;
+	width: 200px;
+	height: 300px;
+}
+
+.tucano .head {
+	background-color: var(--corPlumaTerciaria);
+	width: 56px;
+	height: 108px;
+	border-radius: 50px 0px 0px 50px;
+	transform: scaleY(-1);
+}
+
+.tucano .head:after {
+	content: "";
+	background-color: var(--corPlumaPrimaria);
+	position: absolute;
+	width: calc(114px / 2);
+	height: 108px;
+	left: 55px;
+	border-radius: 50px 0px 0px 50px;
+	transform: scaleX(-1);
+}
+
+.tucano .head .eye {
+	background-color: var(--corPlumaPrimaria);
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	top: 25px;
+	left: 30px;
+	border-radius: 50px;
+	z-index: 2;
+}
+
+.tucano .head .eye .iris {
+	background-color: var(--corIrisPrimaria);
+	position: absolute;
+	width: 32px;  
+	height: 32px;
+	left: 10px;
+	top: 10px;
+	border-radius: 50px;
+	z-index: 2;
+}
+
+.tucano .head .eye .iris .pupil {
+	background-color: var(--corPlumaTerciaria);
+	position: absolute;
+	width: 16px; 
+	height: 16px; 
+	left: 8px;
+	top: 8px;
+	border-radius: 50px;
+	z-index: 2;
+}
+
+
+.beak {
+	background-color: var(--corPrincipalBico);
+	position: absolute;
+	width: 216px;
+	height: 108px;
+	top: 0;
+	left: 60px;
+	border-radius: 0px 0px 200px 0px;
+	z-index: -1;
+}
+
+.beak:after {
+	content: "";
+	background-color: var(--corSecundariaBico);
+	position: absolute;
+	width: 162px;
+	height: 58px;
+	top: 0;
+	left: 0;
+	border-radius: 0px 0px 200px 0px;
+	z-index: -1;
+}
+
+.beak:before {
+	content: "";
+	background-color: var(--corTerciariaBico);
+	position: absolute;
+	width: 80px;
+	height: 58px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	box-shadow: 0 3.1em 0 0.1px var(--corSecundariaBico);
+}
+/* BOX-SHADOW INFOS
+	h-shadow: A posição horizontal da sombra.
+	v-shadow: A posição vertical da sombra.
+	blur: O desfoque da sombra (opcional).
+	spread: O espalhamento da sombra (opcional).
+	color: A cor da sombra.*/
+.body {
+	background-color: var(--corPlumaTerciaria);
+	position: absolute;
+	width: 136px;
+	height: 136px;
+	top: 95px;
+	left: -10px;
+	border-radius: 70px 70px;
+	z-index: -1;
+}
+
+.wings {
+	background-color: var(--corPlumaTerciaria);
+	position: absolute;
+	width: 200px;
+	height: 70px;
+	top: 105px;
+	left: -40px;
+	border-radius: 0px 0px 70px 70px;
+	z-index: -1;
+}
+
+.tail {
+	background-color: var(--corPlumaTerciaria);
+	position: absolute;
+	width: 110px;
+	height: 45px;
+	top: 210px;
+	border-radius: 75px 75px 0px 0px;
+}
+
+.tail:after {
+	content: "";
+	background-color: var(--corRaboPrimaria);
+	position: absolute;
+	width: 35px;
+	height: 30px;
+	top: 15px;
+	left: 20px;
+	border-radius: 75px 0px 0px 0px;
+	z-index: 3;
+}
+
+.tail:before {
+	content: "";
+	background-color: var(--corRaboSecundaria);
+	position: absolute;
+	width: 35px;
+	height: 30px;
+	top: 15px;
+	left: 50px;
+	border-radius: 0px 75px 0px 0px;
+	z-index: 3;
+}
+
+.stick {
+	background-color: var(--corGalho);
+	position: absolute;
+	width: 270px;
+	height: 20px;
+	top: 210px;
+	left: -20px;
+	z-index: 3;
+}
+
+.baby-body {
+	background-color: var(--corPlumaTerciaria);
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	left: 180px;
+	top: 155px;
+	border-radius: 100%;
+}
+
+.baby-body:after {
+	content: "";
+	background-color: var(--corPrincipalBico);
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	z-index: -1;
+}
+
+.baby-body .eye {
+	background-color: var(--corPlumaPrimaria);
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	left: 10px;
+	top: 10px;
+}
+
+.baby-body .eye:after {
+	content: "";
+	background-color: var(--corPlumaTerciaria);
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	left: 10px;
+	top: 10px;
+}
