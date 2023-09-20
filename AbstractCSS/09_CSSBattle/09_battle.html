@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #998235;
+            display: flex;
+            justify-content: center;
+          }
+        .body-piano {
+            margin-top: 92px;
+            margin-left: 0px;
+            width: 180px;
+            height: 100px;
+            background: #191919;
+            border-radius: 10px;
+          }
+        
+        .body-piano:after {
+          content: "";
+          margin-top: 10px;
+          margin-left: 20px;
+          position: absolute;
+          background-color: #191919;
+          width: 15px;
+          height: 50px;
+          z-index: 9;
+          box-shadow:
+            25px 0px 0 0 #191919,
+            75px 0px 0 0 #191919,
+            100px 0px 0 0 #191919,
+            125px 0px 0 0 #191919;
+        }
+          
+        .teclado {
+          margin-top: 117px;
+          margin-left: -150px;
+          border-radius: 5px;
+          position: absolute;
+          background-color: #FFFFFF;
+          width: 20px;
+          height: 70px;
+          box-shadow:
+            25px 0px 0 0 #FFFFFF,
+            50px 0px 0 0 #FFFFFF,
+            75px 0px 0 0 #FFFFFF,
+            100px 0px 0 0 #FFFFFF,
+            125px 0px 0 0 #FFFFFF,
+            150px 0px 0 0 #FFFFFF;
+        }
+        </style>
+    <title>09_CSSBattle</title>
+</head>
+<body>
+    <div class="body-piano"></div>
+    <div class="teclado"></div>
+</body>
+</html>
