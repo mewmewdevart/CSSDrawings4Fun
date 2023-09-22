@@ -2,89 +2,149 @@
 @import url('resetCss.css');
 
 :root {
-    --brand-color: #FF4656;
-    --brand-color-dark: #0F1923;
-    
-    --dark-10: #131318;
-    --white-20: #FFFFFF;
+	--brand-color: #FF4656;
+	--brand-color-dark: #0F1923;
+	
+	--dark-10: #131318;
+	--white-20: #FFFFFF;
 
-    --support-05: #E0E0E0;
-    --support-04: #F03D3D;
-    --support-03: #FFCE52;
-    --support-02: #0BB07B;
-    --support-01: #2962FF;
+	--support-05: #E0E0E0;
+	--support-04: #F03D3D;
+	--support-03: #FFCE52;
+	--support-02: #0BB07B;
+	--support-01: #2962FF;
 }
 
 *, body {
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #valorantPage {
-    width: 100%;
-    max-height: 100vh;
+	width: 100%;
 	overflow: hidden;
-    background-size: 100% 100%; 
-    background-image: linear-gradient(-27deg, var(--brand-color-dark) 50%, var(--brand-color) 50%);
+	background-size: 100% 100%; 
+	background-image: linear-gradient(-30deg, var(--brand-color) 50%, var(--brand-color-dark) 50%);
 }
 
 header {
-    padding-top: 40px;
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
+	padding-top: 40px;
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
 }
 
-header img:first-child {
-    width: 58px;
-    height: 39px;
-}
-
-header img:nth-child(2) {
-    width: 124px;
-    height: 34px;
-}
-
-header img:nth-child(3) {
-    width: 24px;
-    height: 24px;
+header img {
+	cursor: pointer;
 }
 
 #content {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-    width: 80%;
+	width: 80%;
+	min-height: 100vh;
 }
 
-.container-left {
+#content .container-left {
 	display: block;
+	margin: 15% auto;
 	width: 50%;
 }
-.container-left .logoVal {
-	margin-top: 100px;
+
+.logoValorant {
 	margin-bottom: 50px;
-	width: 400px;
-	height: 61px;
 }
 
-.container-left .cards img {
-    width: 170px;
-    height: 170px;
-	padding: 3px;
-	/* 
-    box-sizing: border-box;
-    padding: 5px; 
-    border: 2px solid white; */
+.cards-group {
+	display: flex;
+	gap: 40px;
+	margin-left: 15px;
+}
+.cards-group .card-solo {
+	display: flex;
+	position: relative;
 }
 
-.container-right {
-	display: block;
-	width: 50%;
+.cards-group .card-solo h1 {
+	margin-top: 100%;
+	margin-left: 30%;
+	position: absolute;
+	color: #FFF;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
 }
+
+.cards-group .card-solo img {
+	position: relative;
+	clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 15%);
+	background: #ff4656;
+	border: 1.5px solid #fff;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+}
+  
+.cards-group .card-solo img:hover {
+	transform: scale(1) translate(-10px, -30px);
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+}
+
+.cards-group .card-solo .img-border {
+	position: absolute;
+	background: #fff;
+	width: 170px;
+	height: 170px;
+	left: -15px;
+	top: -15px;
+	clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+}
+
+.cards-group .card-solo .img-border::after {
+	content: "";
+	position: absolute;
+	background: #1f2326;
+	width: 98.5%;
+	height: 98.5%;
+	left: 1px;
+	top: 1px;
+	clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+} 
 
 .container-right img {
-	width: 506px;
-	height: 745px;
-	transform: rotate(6.743deg);
+	margin-left: 100px;
+	bottom: 0;
+	height: 100%;
+	width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.logoValorant {
+		margin: 35% 0;
+	}
+
+    #content .container-left {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+	.cards-group {
+		display: block;
+	}
+
+	.cards-group .card-solo {
+		margin-bottom: 40%;
+	}
+
+	.cards-group .card-solo h1 {
+		margin-top: 95%;
+	}
+
+    .container-right img {
+        display: none;
+    }
 }
