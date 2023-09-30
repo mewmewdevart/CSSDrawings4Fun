@@ -1,0 +1,161 @@
+@import url(./resetCss.css);
+
+:root {
+	--colorDarkDarkRed: #AA231F;
+	--colorDarkRed: #E62325;
+	--colorRed: #FF5C49;
+	--colorSoftSoftRed: #FF806C;
+	--colorSoftRed: #FBEAAE;
+	--colorBlack: #343334;
+	--colorWhite: #EAEAEA;
+}
+
+body {
+	background-color: var(--colorSoftRed);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.car-body {
+	background-color: var(--colorRed);
+	width: 350px;
+	height: 91px;
+	border-radius: 28px 28px 0px 0px;
+}
+
+.car-body::before {
+	content: '';
+	position: absolute;
+	width: 350px;
+	height: 28px; 
+	margin-top: 70px; 
+	background-color: var(--colorSoftSoftRed);
+	border-radius: 0px 0px 10.5px 10.5px;
+	z-index: 2;
+}
+
+.wheel {
+	background-color: var(--colorBlack);
+	position: absolute;
+	width: 84px;
+	height: 84px;
+	border-radius: 67px; 
+	z-index: 3;
+	margin-top: 70px; 
+	margin-left: -199.5px;
+}
+
+.wheel:after {
+	content: "";
+	background-color: var(--colorBlack);
+	position: absolute;
+	width: 84px;
+	height: 84px;
+	border-radius: 67px; 
+	z-index: 3;
+	margin-left: 199.5px;
+}
+
+.wheel-circle {
+	background-color: var(--colorWhite);
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	z-index: 4;
+	margin-top: 17.5px; 
+	margin-left: 17.5px;
+	border-radius: 49px; 
+}
+
+.wheel-circle:after {
+	content: "";
+	background-color: var(--colorWhite);
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	z-index: 4;
+	margin-left: 199.5px;
+	border-radius: 49px; 
+}
+
+.light {
+	background-color: var(--colorSoftRed);
+	position: absolute;
+	width: 28px;
+	height: 21px;
+	margin-top: -17.5px;
+	margin-left: -322px;
+	border-radius: 0px 0px 35px 0px;
+}
+
+.light:before {
+	content: "";
+	background-color: var(--colorDarkDarkRed);
+	position: absolute;
+	width: 28px;
+	height: 21px;
+	margin-left: 322px;
+	border-radius: 35px 0px 0px 35px;
+	z-index: 5;
+}
+
+.mirror {
+	background-color: var(--colorDarkRed);
+	position: absolute;
+	margin-top: -105px;
+	margin-left: -147px;
+	width: 31.5px;
+	height: 21px;
+	border-radius: 35px 17.5px 17.5px 0px; 
+	z-index: 5;
+}
+
+.top-car {
+	position: absolute;
+	border-bottom: 70px solid var(--colorRed);
+	border-left: 17.5px solid transparent;
+	border-right: 17.5px solid transparent;
+	height: 0;
+	width: 175px;
+	height: 70px;
+	margin-top: -140px;
+	margin-left: 77px;
+	z-index: 3;
+}
+
+.glass { 
+	border-bottom: 52.5px solid var(--colorSoftRed);
+	border-left: 17.5px solid transparent;
+	margin-top: 35px;
+	width: 66.5px; 
+	height: 52.5px; 
+}
+
+.glass:after {
+	content: "";
+	position: absolute;
+	border-bottom: 52.5px solid var(--colorSoftRed);
+	border-right: 17.5px solid transparent;
+	margin-left: 84px;
+	width: 56px;
+	height: 52.5px;
+}
+
+.handle {
+	background-color: var(--colorDarkRed);
+	position: absolute;
+	margin-top: 14px;
+	margin-left: 150.5px;
+	width: 17.5px;
+	height: 10.5px;
+}
+
+.handle:after {
+	content: "";
+	background-color: var(--colorDarkRed);
+	position: absolute;
+	margin-left: 105.5px;
+	width: 17.5px;
+	height: 10.5px;
+}
