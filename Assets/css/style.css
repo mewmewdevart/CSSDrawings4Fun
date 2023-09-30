@@ -18,6 +18,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.github-corner {
+    color: #ffffff;
+    fill: #E490D0;
+}
+
 header {
     margin-top: 50px;
     display: flex;
