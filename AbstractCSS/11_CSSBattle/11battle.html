@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          background-color: #5E2D8C;
+        }
+      .box1 {
+          margin-top: 50px;
+          margin-left: 52px;
+          width: 120px;
+          height: 40px;
+          background: #F7ED5A;
+          box-shadow:
+            160px -0px 0px 0px #F7ED5A;
+        }
+      
+      .box1:after {
+          content: "";
+          position: absolute;
+          margin-top: 160px;
+          margin-left: 0px;
+          width: 280px;
+          height: 40px;
+          background: #F7ED5A;
+      }
+      
+      .box1:before{
+          content: "";
+          position: absolute;
+          margin-top: 40px;
+          margin-left: 0px;
+          width: 40px;
+          height: 120px;
+          background: #F7ED5A;
+          box-shadow:
+            240px 0px 0px 0px #F7ED5A;
+      }
+      
+      .box2 {
+        position: absolute;
+        background-color: #F7ED5A;
+        margin-top: 40px;
+        margin-left: 132px;
+        width: 40px;
+        height: 40px;
+        box-shadow:
+          80px 0px 0px 0px #F7ED5A;#F7ED5A;
+      }
+      </style>
+    <title>11_CSSBattle</title>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
