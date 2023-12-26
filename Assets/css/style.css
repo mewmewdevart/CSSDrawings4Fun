@@ -23,6 +23,11 @@ body {
     fill: #E490D0;
 }
 
+p {
+    margin-top: 2%;
+    text-align: center;
+}
+
 header {
     margin-top: 50px;
     display: flex;
