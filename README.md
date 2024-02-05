@@ -1,9 +1,13 @@
 <h1 align="center">
-    👩🏿‍💻🎨 FrontEnd4Fun
+    👩🏿‍💻🎨 CSSDrawings4Fun
 </h1>
 
 <p align="center">
-    <b><i>Learning about FrontEnd Web development through practice.</i></b><br>
+    <b><i>Learning about CSS development through practice.</i></b><br>
+</p>
+
+<p align="center">
+	<a href="https://mewmewdevart.github.io/CSSDrawings4Fun/" target="_blank" rel="noopener noreferrer">See the web link</a>
 </p>
 
 <p align="center">
