@@ -3,341 +3,239 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="Assets/css/style.css">
-	<link rel="shortcut icon" href="Assets/images/icon/favicon.ico" type="image/x-icon">
-	<title>FrontEnd4Fun</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+	<title>CSSDrawings4Fun</title>
 </head>
 <body>
 	<header class="header-content">
-		<a href="https://github.com/mewmewdevart/FrontEnd4Fun" target="_blank" class="github-corner" aria-label="Visualizar projeto no GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+		<a href="https://github.com/mewmewdevart/CSSDrawings4Fun" target="_blank" class="github-corner" aria-label="Visualizar projeto no GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
-		<img src="Assets/images/web-design.png" alt="">
-		<p>My project showcase!<br>Learning about Frontend Web development through small projects using HTML, CSS, and JS.</p>
+		<img src="assets/images/web-design.png" alt="">
+		<p>My CSSDrawings4Fun showcase!<br> Learning about CSS development through practice.</p>
+		<a href="https://mewmewdevart.github.io/WebDevelopment4Fun/ target="_blank" rel="noopener noreferrer">See my other project the 'WebDevelopment4Fun'</a>
 	</header>
 	<section>
 		<div id="myBtnContainer">
 			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
 			<button class="btn" onclick="filterSelection('abstractCSS')"> Abstract </button>
 			<button class="btn" onclick="filterSelection('draws')"> Draws </button>
-			<!-- <button class="btn" onclick="filterSelection('jsProjects')"> JS Projects </button> -->
-			<button class="btn" onclick="filterSelection('webPages')"> WebPages </button>
-			<button class="btn" onclick="filterSelection('frameworks')"> Frameworks </button>
 		</div>
 
 		<div class="container-fluid">
 			<div class="card filterDiv  draws">
 				<div class="icon-number">14</div>
-				<img src="./Drawings/13_CSS/abobora.png" alt="pumpkin banner">
+				<img src="./drawings/13_CSS/abobora.png" alt="pumpkin banner">
 				<h2> 42CSSTober</h2>
 				<p>One illustration for each day</p>
 				<a class="btn" role="button" href="https://mewmewdevart.github.io/42EventCSSTober/" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
-
-			<div class="card filterDiv  frameworks">
-				<div class="icon-number">02</div>
-				<img src="./Frameworks/02_siteWindows95/win95.png" alt="windows95 page banner">
-				<h2>Windows 95 (⚠️ in development)</h2>
-				<p>A simple redesign of the Windows 95 website w/ Angular.</p>
-				<a class="btn" role="button" href="https://windows95-blond.vercel.app/" target="_blank">Show me!</a>
-				<div class="icon-badge">ReDesign</div>
-			</div>
-
-			<div class="card filterDiv  frameworks">
-				<div class="icon-number">01</div>
-				<img src="./Frameworks/01_tictactoe/01titac.png" alt="tictactoe banner">
-				<h2>Tic Tac Toe Game</h2>
-				<p>A simple Tic Tac Game w/ React</p>
-				<a class="btn" role="button" href="https://tictactoe-five-inky.vercel.app/" target="_blank">Show me!</a>
-				<div class="icon-badge">Game</div>
-			</div>
-
-			<div class="card filterDiv  webPages">
-				<div class="icon-number">08</div>
-				<img src="./WebPages/08_siteOrkut/page.png" alt="orkut page banner">
-				<h2>Redesign Orkut</h2>
-				<p>A simple redesign of the Orkut website.</p>
-				<a class="btn" role="button" href="./WebPages/08_siteOrkut/orkut.html" target="_blank">Show me!</a>
-				<div class="icon-badge">ReDesign</div>
-			</div>
 	
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">10</div>
-				<img src="./AbstractCSS/11_CSSBattle/cssBattle.png" alt="the box">
+				<img src="./abstractCSS/11_CSSBattle/cssBattle.png" alt="the box">
 				<h2>CSS Battle - Sep/28th </h2>
 				<p>A simple target using position, shadow and z-index</p>
-				<a class="btn" role="button" href="./AbstractCSS/11_CSSBattle/11battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/11_CSSBattle/11battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">09</div>
-				<img src="./AbstractCSS/10_CSSBattle/10css.png" alt="the game">
+				<img src="./abstractCSS/10_CSSBattle/10css.png" alt="the game">
 				<h2>Battle #20 - Hover </h2>
 				<p>A simple target using position, top and left</p>
-				<a class="btn" role="button" href="./AbstractCSS/10_CSSBattle/10css.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/10_CSSBattle/10css.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 
 			<div class="card filterDiv  draws">
 				<div class="icon-number">13</div>
-				<img src="./Drawings/12_Car/car.png" alt="Praticing">
+				<img src="./drawings/12_Car/car.png" alt="Praticing">
 				<h2>Car Art</h2>
 				<p> Drawing a flat-style car with CSS</p>
-				<a class="btn" role="button" href="./Drawings/12_Car/car.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/12_Car/car.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">08</div>
-				<img src="./AbstractCSS/09_CSSBattle/09_css.png" alt="the gradient block">
+				<img src="./abstractCSS/09_CSSBattle/09_css.png" alt="the gradient block">
 				<h2>CSS Battle #14 - ZIndex </h2>
 				<p>A simple target using position, shadow and z-index</p>
-				<a class="btn" role="button" href="./AbstractCSS/09_CSSBattle/09_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/09_CSSBattle/09_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">07</div>
-				<img src="./AbstractCSS/08_CSSBattle/8css.png" alt="the gradient block">
+				<img src="./abstractCSS/08_CSSBattle/8css.png" alt="the gradient block">
 				<h2>CSS Battle #15 - Filter </h2>
 				<p>A simple target using position, top and left</p>
-				<a class="btn" role="button" href="./AbstractCSS/08_CSSBattle/08_cssBattle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/08_CSSBattle/08_cssBattle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 
 			<div class="card filterDiv  draws">
 				<div class="icon-number">12</div>
-				<img src="./Drawings/11_Scenario/scenario.png" alt="Praticing">
+				<img src="./drawings/11_Scenario/scenario.png" alt="Praticing">
 				<h2>Cute home</h2>
 				<p> Cute art developed for training the environment</p>
-				<a class="btn" role="button" href="./Drawings/11_Scenario/scenario.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/11_Scenario/scenario.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv  draws">
 				<div class="icon-number">11</div>
-				<img src="./Drawings/10_Tucano/tucano.png" alt="Praticing">
+				<img src="./drawings/10_Tucano/tucano.png" alt="Praticing">
 				<h2>Toucan</h2>
 				<p> The art of a toucan and the baby </p>
-				<a class="btn" role="button" href="./Drawings/10_Tucano/tucano.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/10_Tucano/tucano.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">06</div>
-				<img src="./AbstractCSS/07_CSSBattle/challenge.png" alt="the gradient block">
+				<img src="./abstractCSS/07_CSSBattle/challenge.png" alt="the gradient block">
 				<h2>CSS Battle - Sep/16th</h2>
 				<p>A simple target using position, top and left</p>
-				<a class="btn" role="button" href="./AbstractCSS/07_CSSBattle/07_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/07_CSSBattle/07_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 
 			<div class="card filterDiv  draws">
 				<div class="icon-number">10</div>
-				<img src="./Drawings/09_Robot/robot.png" alt="Praticing">
+				<img src="./drawings/09_Robot/robot.png" alt="Praticing">
 				<h2>A simple robot animation</h2>
 				<p>Utilizing @keyframes for animating the robot</p>
-				<a class="btn" role="button" href="./Drawings/09_Robot/robot.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/09_Robot/robot.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">05</div>
-				<img src="./AbstractCSS/05_CSSBattle/05_battle.png" alt="the block">
+				<img src="./abstractCSS/05_CSSBattle/05_battle.png" alt="the block">
 				<h2>CSS Battle - Sep/13th</h2>
 				<p>A simple target using position, top and left</p>
-				<a class="btn" role="button" href="./AbstractCSS/05_CSSBattle/05_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/05_CSSBattle/05_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 	
 			<div class="card filterDiv  draws">
 				<div class="icon-number">09</div>
-				<img src="./Drawings/08_SingleDiv/singleDiv.png" alt="Praticing">
+				<img src="./drawings/08_SingleDiv/singleDiv.png" alt="Praticing">
 				<h2>Single DIV CSS - Pratice</h2>
 				<p>Training on creating unique divs with CSS</p>
-				<a class="btn" role="button" href="./Drawings/08_SingleDiv/singleDiv.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/08_SingleDiv/singleDiv.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv  draws">
 				<div class="icon-number">08</div>
-				<img src="./Drawings/07_MoonAnim/moon.png" alt="Planet and Moon animation">
+				<img src="./drawings/07_MoonAnim/moon.png" alt="Planet and Moon animation">
 				<h2>Planet animation</h2>
 				<p>Planet and moon animation</p>
-				<a class="btn" role="button" href="./Drawings/07_MoonAnim/moonAnim.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/07_MoonAnim/moonAnim.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 	
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">04</div>
-				<img src="./AbstractCSS/04_CSSBattle/04_battle.png" alt="the block">
+				<img src="./abstractCSS/04_CSSBattle/04_battle.png" alt="the block">
 				<h2>CSS Battle - Sep/10th</h2>
 				<p>A simple target using position, top and left</p>
-				<a class="btn" role="button" href="./AbstractCSS/04_CSSBattle/04_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/04_CSSBattle/04_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
-			</div>
-
-			<div class="card filterDiv  webPages">
-				<div class="icon-number">07</div>
-				<img src="./WebPages/07_siteEmoji/memoji.jpg" alt="codelandia site challenge">
-				<h2>Memoji Website</h2>
-				<p>Memoji website challenge, a simple website</p>
-				<a class="btn" role="button" href="./WebPages/07_siteEmoji/07_index.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
 			</div>
 
 			<div class="card filterDiv  draws">
 				<div class="icon-number">07</div>
-				<img src="./Drawings/06_JuniorDuolingo/junior.png" alt="junior the character of duolingo">
+				<img src="./drawings/06_JuniorDuolingo/junior.png" alt="junior the character of duolingo">
 				<h2>Junior - Duolingo</h2>
 				<p>Junior, the Duoling character!</p>
-				<a class="btn" role="button" href="./Drawings/06_JuniorDuolingo/juniorDuo.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./drawings/06_JuniorDuolingo/juniorDuo.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">03</div>
-				<img src="./AbstractCSS/03_CSSBattle/03.png" alt="two 'e' letters">
+				<img src="./abstractCSS/03_CSSBattle/03.png" alt="two 'e' letters">
 				<h2>CSS Battle - Sep/9th</h2>
 				<p>A simple target using position, top and left</p>
-				<a class="btn" role="button" href="./AbstractCSS/03_CSSBattle/03_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/03_CSSBattle/03_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 		
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">02</div>
-				<img src="./AbstractCSS/02_CSSBattle/02.png" alt="abstract flower with circles">
+				<img src="./abstractCSS/02_CSSBattle/02.png" alt="abstract flower with circles">
 				<h2>CSS Battle - Sep/7th</h2>
 				<p>A simple target using border-radius and absolute positioning</p>
-				<a class="btn" role="button" href="./AbstractCSS/02_CSSBattle/02_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/02_CSSBattle/02_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
 
 			<div class="card filterDiv  abstractCSS">
 				<div class="icon-number">01</div>
-				<img src="./AbstractCSS/01_CSSBattle/01.png" alt="five circles and one inside">
+				<img src="./abstractCSS/01_CSSBattle/01.png" alt="five circles and one inside">
 				<h2>CSS Battle - Sep/6th</h2>
 				<p>A simple target with a border-radius and a top/left position</p>
-				<a class="btn" role="button" href="./AbstractCSS/01_CSSBattle/01_battle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="./abstractCSS/01_CSSBattle/01_battle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">CSSBattle</div>
 			</div>
-
 			<div class="card filterDiv draws">
 				<div class="icon-number">06</div>
-				<img src="Drawings/05_CatAnim/catGif.gif" alt="cat draw">
+				<img src="drawings/05_CatAnim/catGif.gif" alt="cat draw">
 				<h2>Cat</h2>
 				<p>A simple cat art animation</p>
-				<a class="btn" role="button" href="Drawings/05_CatAnim/catAnim.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="drawings/05_CatAnim/catAnim.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv draws">
 				<div class="icon-number">05</div>
-				<img src="Drawings/04_Cat/cat.png" alt="cat draw">
+				<img src="drawings/04_Cat/cat.png" alt="cat draw">
 				<h2>Cat</h2>
 				<p>A simple cat art </p>
-				<a class="btn" role="button" href="Drawings/04_Cat/cat.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="drawings/04_Cat/cat.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv draws">
 				<div class="icon-number">04</div>
-				<img src="Drawings/03_Apple/apple.png" alt="ice cream draw">
+				<img src="drawings/03_Apple/apple.png" alt="ice cream draw">
 				<h2>Apple</h2>
 				<p>A simple apple art </p>
-				<a class="btn" role="button" href="Drawings/03_Apple/apple.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="drawings/03_Apple/apple.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 		
 			<div class="card filterDiv draws">
 				<div class="icon-number">03</div>
-				<img src="Drawings/02_IceCream/iceCream.png" alt="ice cream draw">
+				<img src="drawings/02_IceCream/iceCream.png" alt="ice cream draw">
 				<h2>Ice Cream</h2>
 				<p>A simple ice cream art </p>
-				<a class="btn" role="button" href="Drawings/02_IceCream/iceCream.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="drawings/02_IceCream/iceCream.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv draws">
 				<div class="icon-number">02</div>
-				<img src="Drawings/01_Circles/draw01.png" alt="facial edxpressions drawing">
+				<img src="drawings/01_Circles/draw01.png" alt="facial edxpressions drawing">
 				<h2>Facial Expressions</h2>
 				<p>Practicing simple facial expressions</p>
-				<a class="btn" role="button" href="Drawings/01_Circles/circle.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="drawings/01_Circles/circle.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
 			</div>
 
 			<div class="card filterDiv draws">
 				<div class="icon-number">01</div>
-				<img src="Drawings/00_Doodle/draw00.png" alt="black woman draw">
+				<img src="drawings/00_Doodle/draw00.png" alt="black woman draw">
 				<h2>Doodle Art</h2>
 				<p>A simpĺe doodle art</p>
-				<a class="btn" role="button" href="Drawings/00_Doodle/doodleArt.html" target="_blank">Show me!</a>
+				<a class="btn" role="button" href="drawings/00_Doodle/doodleArt.html" target="_blank">Show me!</a>
 				<div class="icon-badge">Drawins</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">06</div>
-				<img src="WebPages/06_paginaGame/assets/image/printscreen06.jpg" alt="valorant game illustration of the site">
-				<h2>Gaming Platform</h2>
-				<p>A simple Valorant game platform.</p>
-				<a class="btn" role="button" href="WebPages/06_paginaGame/pageGame.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">05</div>
-				<img src="WebPages/05_paginaStreaming/assets/image/printScreen.png" alt="Marvel streming site">
-				<h2>Streaming Platform </h2>
-				<p>A simple Streaming Platform for Marvel Movies</p>
-				<a class="btn" role="button" href="WebPages/05_paginaStreaming/pageStreaming.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">04</div>
-				<img src="WebPages/04_paginaFilme/assets/image/Studio Ghibli.png" alt="Studio Ghibli streming site">
-				<h2>Streaming Platform Soft</h2>
-				<p>A simple Streaming Platform for Ghibli movies</p>
-				<a class="btn" role="button" href="WebPages/04_paginaFilme/moviePage.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">03</div>
-				<img src="WebPages/03_pageLogin/assets/image/loginPage.png" alt="Login page">
-				<h2>Login Page</h2>
-				<p>A simple login page</p>
-				<a class="btn" role="button" href="WebPages/03_pageLogin/loginPage.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">02</div>
-				<img src="WebPages/02_BasicLandingPage/assets/image/printImage.jpg" alt="A basic landing page printscreen">
-				<h2>Store Homepage</h2>
-				<p>Simple Landing Page</p>
-				<a class="btn" role="button" href="WebPages/02_BasicLandingPage/basicLanding.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">01</div>
-				<img src="WebPages/01_ShopHome/assets/image/Shop - Home.png" alt="A basic shop landing page for shoes">
-				<h2>Online Store Homepage</h2>
-				<p>Simple homepage for a shoe store.</p>
-				<a class="btn" role="button" href="WebPages/01_ShopHome/shopHome.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
-			</div>
-
-			<div class="card filterDiv webPages">
-				<div class="icon-number">00</div>
-				<img src="WebPages/00_BlogPost-list/assets/images/Blog - Home.png" alt="Image of sections of blog">
-				<h2>List of Postings</h2>
-				<p>List of postings from a news portal.</p>
-				<a class="btn" role="button" href="WebPages/00_BlogPost-list/blogPostList.html" target="_blank">Show me!</a>
-				<div class="icon-badge">Codelandia</div>
 			</div>
 		</div>
 	</section>

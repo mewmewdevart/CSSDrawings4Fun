@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorPrincipal: #FF9C33;
+    --colorGray: #DDDAEC;
+    --colorYellow: #FBE363;
+
+    --colorMainGray: #989898;
+    --colorMainBlack: #1a1a1a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.github-corner {
+    color: #ffffff;
+    fill: #FF9C33;
+}
+
+p {
+    margin-top: 2%;
+    text-align: center;
+}
+
+header {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img{
+    width: 100px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+#myBtnContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #665E66;
+    color: white;
+  }
+
+.filterDiv {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+}
+
+.container-fluid .card {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px, rgba(149, 117, 222, 0.5) 0px 2px 5px;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+.container-fluid .card img {
+    border: 1px solid var(--colorGray);
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top; /* Adjust as needed, e.g., top, center, bottom, left, right, etc. */
+}
+
+.container-fluid .card h2 {
+    color: var(--colorMainBlack);
+    font-size: 18px;
+}
+
+.container-fluid .card p {
+    color: var(--colorMainGray);
+}
+
+.container-fluid .card .icon-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 0px 5px 0px;
+    padding: 20px;
+    font-weight: 700;
+    background-color: var(--colorPrincipal);
+    color: var(--colorGray);
+}
+
+.container-fluid .card .icon-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px 0px 5px 0px;
+    padding: 12px;
+    font-weight: 500;
+    background-color: #DDDAEC;
+    color: #7c7b7d;
+}
+
+
+.container-fluid .card .btn {
+    background-color: #FFFFFF;
+    border: 1px solid var(--colorPrincipal);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 10px;
+}
+
+.container-fluid .card .btn:hover {
+    background-color: var(--colorPrincipal);
+    color: white;
+}
+
+.container-fluid .card .btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.container-fluid .card .btn:focus-visible {
+    box-shadow: none;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+footer a {
+    color: var(--colorMainBlack);
+    text-decoration: none;
+}
+
+/* Para telas maiores ou iguais a 768px */
+@media screen and (min-width: 768px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Para telas menores que 768px */
+@media screen and (max-width: 767px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
