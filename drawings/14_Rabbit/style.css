@@ -1,0 +1,140 @@
+:root {
+  --white: white;
+  --light-blue: #d3f4fc;
+  --background-color: #ecccfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* Rabbit body styling */
+.rabbit-body,
+.head,
+.jaw,
+.jaw:after, .leg {
+  background-color: var(--white);
+  border-radius: 100%;
+}
+
+.rabbit-body {
+  width: 112px;
+  height: 200px;
+  transform: rotate(25deg);
+}
+
+.head {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  bottom: 155px;
+  left: -20px;
+  transform: rotate(-25deg);
+}
+
+.jaw,
+.jaw:after {
+  position: absolute;
+  width: 95px;
+  height: 52px;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.jaw {
+  left: 30px;
+}
+
+.jaw:after {
+  content: "";
+  top: 20px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+
+.nose {
+  position: absolute;
+  width: 26px;
+  height: 20px;
+  background-color: var(--white);
+  border-radius: 1px 100px 50px 50px;
+  left: 99px;
+  z-index: 2;
+}
+
+.leg {
+  position: relative;
+  width: 154px;
+  height: 149px;
+  bottom: -60px;
+  left: 2px;
+  z-index: 2;
+}
+
+.detail-leg {
+    position: absolute;
+    background-color: var(--white);
+    border: solid black 2px;
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+    left: 30px;
+    bottom: 50px;
+    transform: rotate(-35deg);
+    z-index: 2;
+}
+
+.detail-leg:after {
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    width: 110px;
+    height: 55px;
+    left: -9px;
+    bottom: -5px;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.details-back-left {
+    position: absolute;
+    background-color: var(--light-blue);
+    width: 70px;
+    height: 40px;
+    left: 70px;
+    bottom: 105px;
+    transform: rotate(5deg);
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.feet {
+    position: absolute;
+    background-color: var(--white);
+    width: 85px;
+    height: 35px;
+    border-radius: 0 100px 0px 5px;
+    left: 100px;
+    bottom: 14px;
+    transform: rotate(-25deg);
+}
+
+.tail {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  background-color: var(--light-blue);
+  left: -20px;
+  border-radius: 100%;
+  z-index: 1;
+}
